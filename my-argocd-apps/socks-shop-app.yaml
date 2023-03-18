@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: socks-app
+  namespace: argocd
+ 
+spec:
+  destination:
+    namespace: sock-shop
+    server: https://kubernetes.default.svc
+  project: default
+  sources:
+  - repoURL: https://github.com/starburn-hub/final-exam.git
+    targetRevision: main
+    path: sock-deployment-files    
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
