@@ -7,16 +7,16 @@ A Single react app and Socks app deployment on Amazon EKS using Terraform as the
 
 Requirement/Necessity 
 
-	Github Account
-	NPM (Not package Manager)/ NodeJS
-	Docker
-	Terraform
-	Helm charts
-	AWS Account
-	AWS CLI
-	K8s(Kubernetes)
-	Github Actions
-	ArgoCD
+~	Github Account
+~	NPM (Not package Manager)/ NodeJS
+~	Docker
+~	Terraform
+~	Helm charts
+~	AWS Account
+~	AWS CLI
+~	K8s(Kubernetes)
+~	Github Actions
+~	ArgoCD
 
 Infrastructure/Automation Deployment
 
@@ -26,12 +26,11 @@ The main objective of this project is to deploy two applications, React App & so
 	Create a new GitHub Actions file.  
 	Create a new secret in the GitHub repository with GHCR username and password.
 	The image name in the docker file must be correct for a successful dockerization.
-	Create a new AWS account and create a new user.
-	Configure the AWS CLI with the new user credentials.
+	Configure the AWS CLI with the user credentials.
 	Create a new S3 bucket for the terraform state.
-	Configure the terraform backend in the main.tf.
-	Terraform initialization.
-	Terraform plan & plan.
+	Configure the terraform backend in the backend.tf.
+	Terraform init.
+	Terraform plan & Apply.
 	eks.tf terraform file creates EKS cluster &the node group.
 	argocd-apps.tf will create argocd deployment.
 
