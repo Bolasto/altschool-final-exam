@@ -8,7 +8,7 @@ A Single react app and Socks app deployment on Amazon EKS using Terraform as the
 Requirement/Necessity 
 
 ~	Github Account
-~	NPM (Not package Manager)/ NodeJS
+~	NPM (Node package Manager)/ NodeJS
 ~	Docker
 ~	Terraform
 ~	Helm charts
